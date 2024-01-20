@@ -1,6 +1,4 @@
-import React from "react";
-
-export function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-dark mt-5 py-5">
       <div className="container-xl">
@@ -76,6 +74,6 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

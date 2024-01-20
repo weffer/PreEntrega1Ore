@@ -1,7 +1,6 @@
-import React from "react";
 import "./NavBar.css";
 
-export function NavBar() {
+const NavBar = () => {
   return (
     <header className="py-5">
       <div className="container-xl">
@@ -89,4 +88,6 @@ export function NavBar() {
       </div>
     </header>
   );
-}
+};
+
+export default NavBar;
