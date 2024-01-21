@@ -11,3 +11,11 @@ body {
 .bg-primary {
   background-color: #cac94d !important;
 }
+
+.border-primary {
+  border-color: #cac94d !important;
+}
+
+.fs-3 {
+  font-size: 2.6rem !important;
+}
