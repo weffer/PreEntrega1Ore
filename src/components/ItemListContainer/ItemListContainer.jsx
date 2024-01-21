@@ -1,4 +1,5 @@
 import "./ItemListContainer.css";
+import { getImageURL } from "../../utils/image-util";
 
 const ItemListContainer = ({ greeting }) => {
   return (
@@ -6,7 +7,7 @@ const ItemListContainer = ({ greeting }) => {
       <div className="col-4">
         <img
           className="img-fluid producto"
-          src="../../assets/img/producto1.webp"
+          src={getImageURL("producto1.webp")}
           alt="producto de escrito quadra"
         />
       </div>
