@@ -6,7 +6,7 @@ const ItemListContainer = ({ greeting }) => {
       <div className="col-4">
         <img
           className="img-fluid producto"
-          src="../../../public/img/producto1.jpg"
+          src="../../../public/img/producto1.webp"
           alt="producto de escrito quadra"
         />
       </div>
