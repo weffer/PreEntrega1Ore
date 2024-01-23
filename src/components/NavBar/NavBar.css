@@ -33,9 +33,10 @@ header {
   font-weight: 900;
 }
 
-.btn-prod {
+#btn_prod {
   transition: all 0.2s;
 }
-.btn-prod:hover {
+
+#btn_prod:hover {
   transform: scale(1.1);
 }

@@ -59,7 +59,8 @@ const NavBar = () => {
             </p>
             <p className="text-primary fs-1 fw-back">120$</p>
             <a
-              className="btn fs-4 bg-primary text-white py-2 px-5 btn-prod"
+              className="btn fs-4 bg-primary text-white py-2 px-5 producto"
+              id="btn_prod"
               href="#"
             >
               Ver Producto

@@ -18,7 +18,7 @@ const ItemListContainer = ({ greeting }) => {
         <p className="flex-grow-1">{greeting}</p>
         <p className="fs-3 text-black">$150</p>
         <a
-          className="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white btn-prod"
+          className="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white producto"
           href="#"
         >
           Ver Producto
