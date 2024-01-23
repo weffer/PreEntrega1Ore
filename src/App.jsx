@@ -8,7 +8,7 @@ function App() {
       <NavBar />
       <main className="container-xl mt-5">
         <hr className="border border-primary border-2 opacity-50" />
-        <h2 className="text-center fw-bold">Productos</h2>
+        <h2 className="text-center fw-bold">Nuestros Productos</h2>
         <div className="row mt-5">
           <ItemListContainer
             greeting={
