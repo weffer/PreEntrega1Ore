@@ -23,13 +23,7 @@ const NavBar = () => {
               href="#"
             >
               Nosotros
-            </a>
-            <a
-              className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
-              href="#"
-            >
-              Productos
-            </a>
+            </a>            
             <a
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
               href="#"

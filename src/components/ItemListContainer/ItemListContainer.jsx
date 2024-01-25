@@ -1,30 +1,40 @@
+import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css";
-import { getImageURL } from "../../utils/image-util";
+
+import { useEffect, useState } from "react";
 
 const ItemListContainer = ({ greeting }) => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=>{
+    const fetchProducts = async () => {
+      try {
+        const rest = await fetch("./data.json");
+        const data = await rest.json();
+        setProducts(data);              
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchProducts();
+  }, [])
+
   return (
-    <div className="col-md-6 col-lg-4 my-4 row">
-      <div className="col-4">
-        <img
-          className="img-fluid producto"
-          src={getImageURL("producto1.webp")}
-          alt="producto de escrito quadra"
-        />
-      </div>
-      <div className="col-8 d-flex flex-column">
-        <h3 className="text-black fs-5 fw-bold text-uppercase">
-          Escrito QUADRA
-        </h3>
-        <p className="flex-grow-1">{greeting}</p>
-        <p className="fs-3 text-black">$150</p>
-        <a
-          className="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white producto"
-          href="#"
-        >
-          Ver Producto
-        </a>
-      </div>
+    <>
+    <hr className="border border-primary border-2 opacity-50" />
+    <h2 className="text-center fw-bold">{greeting}</h2>
+    <div className="row mt-5">
+
+    {
+      products.map( product => {
+        return (          
+          <ItemList key={product.id} product={product}/>
+        )
+      })
+    } 
     </div>
+    </>
   );
 };
 
