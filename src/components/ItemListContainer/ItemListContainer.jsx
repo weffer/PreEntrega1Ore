@@ -1,24 +1,11 @@
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 
-import { useEffect, useState } from "react";
+import { useProducts } from "../Hooks/useProducts";
 
 const ItemListContainer = ({ greeting }) => {
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(()=>{
-    const fetchProducts = async () => {
-      try {
-        const rest = await fetch("./data.json");
-        const data = await rest.json();
-        setProducts(data);              
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchProducts();
-  }, [])
+  const { products } = useProducts();
 
   return (
     <>
@@ -27,11 +14,17 @@ const ItemListContainer = ({ greeting }) => {
     <div className="row mt-5">
 
     {
-      products.map( product => {
-        return (          
-          <ItemList key={product.id} product={product}/>
-        )
-      })
+      products.length > 0 ? (
+        products.map( product => {
+          return (          
+            <ItemList key={product.id} product={product}/>
+          )
+        })) : 
+           (<div className="text-center">
+              <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>)
     } 
     </div>
     </>

@@ -7,11 +7,7 @@ function App() {
     <>
       <NavBar />
       <main className="container-xl mt-5">
-          <ItemListContainer
-            greeting={
-              "Nuestros Productos"
-            }
-          />        
+        <ItemListContainer greeting={"Nuestros Productos"} />
       </main>
       <Footer />
     </>
