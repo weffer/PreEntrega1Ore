@@ -1,7 +1,8 @@
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 
-import { useProducts } from "../Hooks/useProducts";
+import { useProducts } from "../../Hooks/useProducts";
+
 
 const ItemListContainer = ({ greeting }) => {
 
@@ -10,7 +11,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <>
     <hr className="border border-primary border-2 opacity-50" />
-    <h2 className="text-center fw-bold">{greeting}</h2>
+    <h2 className="text-center fw-bold">{greeting}</h2> 
     <div className="row mt-5">
     {
       products.length > 0 ? (
