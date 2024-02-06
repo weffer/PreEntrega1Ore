@@ -37,6 +37,19 @@ const NavBar = () => {
             >
               Conctactanos
             </NavLink>
+            
+            <ul className="navbar-nav">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIA
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><Link className="dropdown-item" to={`/categoria/Melamina`}>Melamina</Link></li>
+                  <li><Link className="dropdown-item" to={`/categoria/Caoba`}>Caoba</Link></li>
+                </ul>
+              </li>
+            </ul>
+            
             <CartWidget />
           </nav>
         </div>

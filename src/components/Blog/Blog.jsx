@@ -36,7 +36,7 @@ function Blog() {
         <div className="col-md-6 col-lg-4 mb-4">
           <div className="card h-100">
             <img
-              class="card-img-top"
+              className="card-img-top"
               src={getImageURL("Blog2.webp")}
               alt="blog"
               height="300"
@@ -105,7 +105,7 @@ function Blog() {
                 persistente: pasa un trapo....
               </p>
               <a
-                class="mt-auto btn btn-primary d-block text-white btn-prod"
+                className="mt-auto btn btn-primary d-block text-white btn-prod"
                 href="../paginas/verBlog.html"
                 >Leer mas</a
               >

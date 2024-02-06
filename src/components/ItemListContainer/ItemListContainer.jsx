@@ -1,17 +1,20 @@
+import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 
 import { useProducts } from "../../Hooks/useProducts";
 
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
 
-  const { products } = useProducts();
+  const { tipo } = useParams();
+
+  const { products } = useProducts({tipo});
 
   return (
     <main className="container-xl mt-5">
       <hr className="border border-primary border-2 opacity-50" />
-      <h2 className="text-center fw-bold">{greeting}</h2>
+      <h2 className="text-center fw-bold">Nuestros Productos</h2>
       <div className="row mt-5">
       {
         products.length > 0 ? (

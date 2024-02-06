@@ -2,11 +2,11 @@ import { getImageURL } from "../../utils/image-util"
 
 function Nosotros() {
   return (
-    <section class="container-xl mt-5">
-      <h2 class="text-center fw-bold">Sobre Nosotros</h2>
-      <div class="row mt-5 align-items-center">
-        <div class="col-md-6">
-          <p class="fs-5">
+    <section className="container-xl mt-5">
+      <h2 className="text-center fw-bold">Sobre Nosotros</h2>
+      <div className="row mt-5 align-items-center">
+        <div className="col-md-6">
+          <p className="fs-5">
             Hacia fines de la década del setenta, la compañía acentúa sus
             procesos de investigación y desarrolla importantes lazos con los
             principales exponentes de la industria colchonera mundial, en
@@ -17,7 +17,7 @@ function Nosotros() {
             spring y accesorios para el descanso.
           </p>
 
-          <p class="fs-5">
+          <p className="fs-5">
             A principios de los años noventa, la compañía, que ya realizaba
             crecientes exportaciones hacia otros países de América del Sur,
             comienza a formalizar su internacionalización, consolidando
@@ -25,14 +25,14 @@ function Nosotros() {
             hacer lo propio en Paraguay, Perú y Brasil.
           </p>
         </div>
-        <div class="col-md-6 mt-5 mt-md-0">
-          <img class="img-fluid" src={getImageURL("Nosotros1.webp")} alt="nosotros" />
+        <div className="col-md-6 mt-5 mt-md-0">
+          <img className="img-fluid" src={getImageURL("Nosotros1.webp")} alt="nosotros" />
         </div>
-        <div class="col-md-6 mt-5">
-          <img class="img-fluid" src={getImageURL("Nosotros2.webp")} alt="nosotros" />
+        <div className="col-md-6 mt-5">
+          <img className="img-fluid" src={getImageURL("Nosotros2.webp")} alt="nosotros" />
         </div>
-        <div class="col-md-6 mt-5 mt-md-0">
-          <p class="fs-5">
+        <div className="col-md-6 mt-5 mt-md-0">
+          <p className="fs-5">
             Un compromiso con la calidad total. Apegada desde siempre a
             estrictas normas de Calidad Total, Rosen ha establecido los más
             altos estándares en todas las etapas de su quehacer productivo y de
@@ -43,7 +43,7 @@ function Nosotros() {
             desde siempre el Norte de esta empresa y su gente.
           </p>
 
-          <p class="fs-5">
+          <p className="fs-5">
             Gracias a este nivel de exigencia es que en el Centro de
             Investigaciones Tecnológicas, y en sus plantas industriales, han
             nacido las más completas, confiables y exitosas líneas de producto

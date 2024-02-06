@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export function useProductDetail(id) {
+export function useProductDetail({id}) {
 
   const [detail, setDetail] = useState(null);
 
