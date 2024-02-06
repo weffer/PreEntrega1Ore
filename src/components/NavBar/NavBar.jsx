@@ -8,32 +8,32 @@ const NavBar = () => {
       <div className="container-xl">
         <div className="row justify-content-center justify-content-md-between">
           <div className="col-8 col-md-3">
-            <a href="#" className="text-decoration-none logo">
+            <Link to={'/'} className="text-decoration-none logo">
               <strong>E-COMMERCE</strong>
-            </a>
+            </Link>
           </div>
           <nav className="col-md-6 d-flex flex-column align-items-center mt-5 mt-md-0 flex-md-row justify-content-md-end menu">
             <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
-              href="#"
+              to={'/'}
             >
               Inicio
             </NavLink>
             <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
-              href="#"
+              to={'/nosotros'}
             >
               Nosotros
             </NavLink>            
             <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
-              href="#"
+              to={'/blog'}
             >
               Blog
             </NavLink>
             <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
-              href="#"
+              to={'/contactanos'}
             >
               Conctactanos
             </NavLink>
