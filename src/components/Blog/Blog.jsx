@@ -1,3 +1,5 @@
+import { getImageURL } from "../../utils/image-util"
+
 function Blog() {
   return (
     <section className="container-xl mt-5">
@@ -8,7 +10,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog1.jpg"
+              src={getImageURL("Blog1.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -35,7 +37,7 @@ function Blog() {
           <div className="card h-100">
             <img
               class="card-img-top"
-              src="../img/blog2.jpg"
+              src={getImageURL("Blog2.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -61,7 +63,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog3.jpg"
+              src={getImageURL("Blog3.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -88,7 +90,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog4.jpg"
+              src={getImageURL("Blog4.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -114,7 +116,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog5.jpg"
+              src={getImageURL("blog5.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -141,7 +143,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog6.jpg"
+              src={getImageURL("Blog6.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -167,7 +169,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog7.png"
+              src={getImageURL("Blog7.webp")}
               alt="blog"
               height="300"
               width="306"
@@ -194,7 +196,7 @@ function Blog() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src="../img/blog8.jpg"
+              src={getImageURL("Blog8.webp")}
               alt="blog"
               height="300"
               width="306"
