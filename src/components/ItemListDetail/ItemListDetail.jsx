@@ -1,32 +1,14 @@
 import { useEffect, useState } from "react";
 import { json, useParams } from "react-router-dom";
 import { getImageURL } from "../../utils/image-util";
+import { useProductDetail } from "../../Hooks/useProductDetail"
 
 
 function ItemListDetail() {
 
   const { id } = useParams();
-  const [detail, setDetail] = useState(null);
-
-  useEffect(()=> {
-    const fetchDetailProduct = async () => {
-        try {
-          const resp = await fetch("/data.json");
-          if(!resp.ok) 
-            throw new Error(`Error de red - Código de estado: ${resp.status}`);
-          
-          const data = await resp.json();
-          const productById = data.find(p => p.id === Number(id));
-          setDetail(productById);
-          
-          
-        } catch (error) {
-          console.error(error);
-        }
-      };
-      fetchDetailProduct();
-  }, [id])
-
+  const { detail } = useProductDetail(id);
+  
   return (    
     detail  ?
     (
