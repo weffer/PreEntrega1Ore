@@ -1,4 +1,5 @@
 import { getImageURL } from "../../utils/image-util";
+import { Link } from "react-router-dom";
 
 const ItemList = ({product}) => {
   
@@ -17,12 +18,11 @@ const ItemList = ({product}) => {
             </h3>
             <p className="flex-grow-1">{product.descripcion}</p>
             <p className="fs-3 text-black">${product.precio}</p>
-            <a
+            <Link to={`/detalle/${product.id}`}
             className="d-block bg-primary text-center p-2 text-uppercase text-decoration-none text-white producto"
-            href="#"
             >
             Ver Producto
-            </a>
+            </Link>
         </div>
     </div>
   )

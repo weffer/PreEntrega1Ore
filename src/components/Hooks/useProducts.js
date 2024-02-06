@@ -6,8 +6,11 @@ export function useProducts (){
     useEffect(()=>{
       const fetchProducts = async () => {
         try {
-          const rest = await fetch("./data.json");
-          const data = await rest.json();
+          const resp = await fetch("./data.json");
+          if(!resp.ok) 
+            throw new Error(`Error de red - Código de estado: ${resp.status}`);
+          
+          const data = await resp.json();
           setProducts(data);              
         } catch (error) {
           console.error(error);

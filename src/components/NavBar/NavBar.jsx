@@ -1,5 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css";
+import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -12,30 +13,30 @@ const NavBar = () => {
             </a>
           </div>
           <nav className="col-md-6 d-flex flex-column align-items-center mt-5 mt-md-0 flex-md-row justify-content-md-end menu">
-            <a
+            <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
               href="#"
             >
               Inicio
-            </a>
-            <a
+            </NavLink>
+            <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
               href="#"
             >
               Nosotros
-            </a>            
-            <a
+            </NavLink>            
+            <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
               href="#"
             >
               Blog
-            </a>
-            <a
+            </NavLink>
+            <NavLink
               className="d-block px-2 py-1 text-decoration-none fs-6 fw-bold text-uppercase text-black"
               href="#"
             >
               Conctactanos
-            </a>
+            </NavLink>
             <CartWidget />
           </nav>
         </div>
@@ -52,13 +53,12 @@ const NavBar = () => {
               escalables (crecen junto contigo) y de gran robustez estructural.
             </p>
             <p className="text-primary fs-1 fw-back">120$</p>
-            <a
+            <Link to={'/detalle'}
               className="btn fs-4 bg-primary text-white py-2 px-5 producto"
-              id="btn_prod"
-              href="#"
+              id="btn_prod"            
             >
               Ver Producto
-            </a>
+            </Link>
           </div>
         </div>
       </div>
